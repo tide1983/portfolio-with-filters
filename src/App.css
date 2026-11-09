@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.toolbar {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.toolbar button {
+  padding: 10px 20px;
+  margin-right: 5px;
+  border: none;
+  background-color: #eee;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.toolbar button:hover {
+  background-color: #ddd;
+}
+
+.toolbar button.active {
+  background-color: #333;
+  color: white;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: #ccc;
+}
